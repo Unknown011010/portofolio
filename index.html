@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px;
+        }
+        .header-content>p {
+            flex: 1;
+            display: flex;
+            align-items: flex-start;
+            text-align: left;
+        }
+        .header-content>h2 {
+            text-align: center;
+        }
+        .image {
+            display: flex;
+            justify-content: left;
+            flex-shrink: 0;
+        }
+        .image img {
+            height: auto;
+            margin: 0 auto;
+            rotate: -90deg;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+        .grid-container div {
+            background-color: #f2f2f2;
+            padding: 10px;
+            border: 1px solid #f5f3f3;
+            font-style: bold;
+        }
+        .gallery {
+            display: flex;
+            flex: 1 1 300px;
+            flex-direction: column;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 10px;
+
+        }
+        .gallery img {
+            align-items: center;
+            align-self: center;
+            align-content: center;
+            border: 1.5px solid #000000;
+            max-width: 100%;
+            height: 300px;
+            width: 350px;
+        }
+        .portfolio-gallery {
+        display: flex;
+        gap: 1.25rem;
+        justify-content:center;
+        flex-wrap: wrap;
+        }
+        section#portofolio, section#biodata, section#header {
+            border: #000000 1.5px solid;
+            border-right: none #ffffff;
+            border-left: none #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container"></div>
+            <h1>My Website</h1>
+            <nav>
+                <a href="#header">Header</a>
+                <a href="#biodata">Biodata</a>
+                <a href="#portofolio">Portofolio</a>
+            </nav>
+    </header>
+
+    <section id="header">
+    <div class="header">
+        <div class="image">
+            <img src="example.jpg" alt="about you">
+        </div>
+        <div class="header-content">
+            <h2>Welcome!</h2>
+            <p>Hello there! Welcome to my webpage!</p>
+        </div>
+    </div>
+    </section>
+
+
+    <section id="biodata">
+        <div>
+            <h2><u>About Me</u></h2>
+            <div class="grid-container">
+                <div class="item1"><b>Nama : Mirza Kece Abiezz</b></div>
+                <div class="item2"><b>Alamat : Kampoeng Arab</b></div>
+                <div class="item3"><b>Pendidikan : S2 ITB Fakultas Ilmu Komputer</b></div>
+                <div class="item4"><b>Hobi : Bobo Cakep</b></div>
+                <div class="item5"><b>Cita-cita : Dokter</b></div>
+                <div class="item6"><b>Social Media : @ibaaad_s</b></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portofolio">
+        <article>
+            <h2><u>Portofolio</u></h2>
+            <div class="portofolio-gallery">
+                <div class="gallery">
+                    <img src="porto1.jpg" alt="Project 1">
+                    <br>
+                    <strong>Proyek 1</strong>
+                    <p>Deskripsi singkat tentang proyek 1.</p>
+                </div>
+            </article>
+            <article>
+                <div class="gallery">
+                    <img src="porto2.jpg" alt="Project 2">
+                    <br>
+                    <strong>Proyek 2</strong>
+                    <p>Deskripsi singkat tentang proyek 2.</p>
+                </div>
+            </article>
+            <article>
+                <div class="gallery">
+                    <img src="porto3.jpg" alt="Project 3">
+                    <br>
+                    <strong>Proyek 3</strong>
+                    <p>Deskripsi singkat tentang proyek 3.</p>
+                </div>
+            </article>
+            </div>
+    </section>
+        
+</body>
+</html>
